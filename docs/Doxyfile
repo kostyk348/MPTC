@@ -1,0 +1,23 @@
+PROJECT_NAME           = "MPTC"
+PROJECT_NUMBER         = 1.0.0
+PROJECT_BRIEF          = "Branchless fixed-point math for low-power MCUs"
+INPUT                  = include README.md
+RECURSIVE              = YES
+OUTPUT_DIRECTORY       = docs/gen
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+HTML_OUTPUT            = html
+USE_MATHJAX            = YES
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+MULTILINE_CPP_IS_BRIEF = YES
+TAB_SIZE               = 4
+EXPAND_AS_DEFINED      = MPTC_INLINE
+PREDEFINED             = MPTC_USE_FLOAT=1 MPTC_TEST_HOST=1
+SKIP_FUNCTION_MACROS   = YES
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = NO
