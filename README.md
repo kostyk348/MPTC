@@ -1,5 +1,9 @@
 # MPTC — Multi-Phase Ternary Computing Library
 
+[![CI](https://github.com/kostyk348/MPTC/actions/workflows/ci.yml/badge.svg)](https://github.com/kostyk348/MPTC/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![C](https://img.shields.io/badge/C-99-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
+
 **Branchless, fixed-point, header-first C99 library for ultra-low-power embedded systems.**
 
 MPTC is a portable implementation of the ideas from the *Multi-Phase Ternary Computing* paradigm — a temporal, wave-based computing model that eliminates branch-prediction penalties and minimizes switching activity. This library adapts those ideas into a practical C99 toolkit you can drop into any microcontroller project, from a 16 MHz ATmega to a 240 MHz ESP32, with the **same header API** and **zero dynamic allocations**.
