@@ -1,0 +1,17 @@
+# C
+*.o
+*.obj
+*.exe
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+build/
+cmake-build-*/
+out/
+.DS_Store
+*.swp
+*.swo
+*~
+tags
