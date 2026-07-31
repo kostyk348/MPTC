@@ -273,4 +273,4 @@ The ESP32 demo runs each module on a synthetic signal and prints timing / energy
 
 ## License
 
-MIT — see `LICENSE`. Suitable for both proprietary and open-source use.
+Apache 2.0 — see `LICENSE`. Suitable for both proprietary and open-source use.
