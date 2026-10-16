@@ -3,6 +3,9 @@
 [![CI](https://github.com/kostyk348/MPTC/actions/workflows/ci.yml/badge.svg)](https://github.com/kostyk348/MPTC/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![C](https://img.shields.io/badge/C-99-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Release](https://img.shields.io/github/v/release/kostyk348/MPTC?sort=semver&color=blue)](https://github.com/kostyk348/MPTC/releases)
+[![License](https://img.shields.io/badge/license-Apache-2.0-green)](https://github.com/kostyk348/MPTC/blob/main/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/kostyk348/MPTC?branch=main)](https://github.com/kostyk348/MPTC/commits/main)
 
 **Branchless, fixed-point, header-first C99 library for ultra-low-power embedded systems.**
 
