@@ -63,6 +63,16 @@ The library is **not** a hardware emulator. It is the *algorithmic essence* of M
 
 All modules are **independent** — you can include just one and ignore the rest. Each has its own `_init` / `_process` lifecycle where stateful, and pure-function APIs where not.
 
+### Task → function → example
+
+| Task | Functions | Example |
+|---|---|---|
+| Measure sine amplitude / dominant harmonic (e.g. FOC phase current) | `sdft_q31_init`, `sdft_q31_update`, `sdft_q31_mag`, `sdft_q31_argmax` | [`examples/esp32_demo/src/main.cpp`](examples/esp32_demo/src/main.cpp) (`showcase_sdft`), [`examples/pc/pc_benchmark.c`](examples/pc/pc_benchmark.c) |
+| Smooth / de-jitter ADC readings (median-of-3) | `triple_pll_q15_init`, `triple_pll_q15_update` | [`examples/esp32_demo/src/main.cpp`](examples/esp32_demo/src/main.cpp) (`showcase_triple_pll`) |
+| 3×3 median filter | `bitonic_q15_median9` | [`examples/esp32_demo/src/main.cpp`](examples/esp32_demo/src/main.cpp) (`showcase_bitonic`), [`examples/pc/pc_benchmark.c`](examples/pc/pc_benchmark.c) |
+| Sauvola adaptive threshold | `integral_q15_sauvola_full` (or `integral_q15_build` + `integral_q15_sauvola`) | [`examples/esp32_demo/src/main.cpp`](examples/esp32_demo/src/main.cpp) (`showcase_integral_img`), [`examples/pc/pc_benchmark.c`](examples/pc/pc_benchmark.c) |
+| TinyML activation (GELU / tanh) | `sint_q15_gelu`, `sint_q15_tanh_rat` | [`examples/esp32_demo/src/main.cpp`](examples/esp32_demo/src/main.cpp) (`showcase_sintmath`), [`examples/pc/pc_benchmark.c`](examples/pc/pc_benchmark.c) |
+
 ---
 
 ## Vision — Where this is useful beyond MCUs
